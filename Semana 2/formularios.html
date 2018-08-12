@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formularios</title>
+</head>
+<body>
+	
+	<form action="">
+		<fieldset>
+			<legend>Datos Personales</legend>
+			<p><label for="">Nombre:</label></p>
+			<p><input type="text"></p>
+		</fieldset>
+
+		<fieldset>
+			<legend>Datos Bancarios</legend>
+			<p><label for="">Apellidos:</label></p>
+			<p><input type="text"></p>
+		</fieldset>
+		
+		<select name="ciudadesper" id="">
+			<optgroup label="Departamentos del Norte">
+				<option value="">Lima</option>
+				<option value="">Ica</option>
+				<option value="">Iquitos</option>
+				<option value="">Tacna</option>
+			</optgroup>
+
+			<optgroup label="Departamentos del Sur">
+				<option value="">Lima</option>
+				<option value="">Ica</option>
+				<option value="">Iquitos</option>
+				<option value="">Tacna</option>
+			</optgroup>
+		</select>
+
+		<input list="ciudades" name="ciudades">
+		<datalist id="ciudades">
+			<option value="Lima">Lima</option>
+			<option value="Ica">Ica</option>
+			<option value="Iquitos">Iquitos</option>
+			<option value="Tacna">Tacna</option>
+		</datalist>
+
+
+		<input type="text" name="nombre" pattern="[aA-zZ,0-9]{3,15}" title="Ingresa tu nombre, no debe contener números ni caracteres especiales" required>
+
+		<input type="submit">
+	</form>
+
+</body>
+</html>

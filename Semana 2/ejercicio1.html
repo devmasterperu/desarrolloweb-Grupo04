@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alienta a tu selección</title>
+</head>
+<body>
+	<form action="">
+	
+		<table>
+			<tr>
+				<td><label for="">Nombre:</label></td>
+				<td><input type="text" pattern="[a-z]{3,20}" required></td>
+			</tr>
+			<tr>
+				<td><label for="">Apellidos:</label></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="">DNI:</label></td>
+				<td><input type="text" pattern="[0-9]{8}" title="ingresa tu DNI, debe contener 8 digitos numéricos" required></td>
+			</tr>
+			<tr>
+				<td><label for="">Sexo</label></td>
+				<td>
+					<input type="radio" id="masculino" name="sexo"> <label for="masculino">Masculino</label>
+					<input type="radio" id="femenino" name="sexo"> <label for="femenino">Femenino</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="">Celular</label></td>
+				<td><input type="tel" pattern="[0-9]{9}" required></td>
+			</tr>
+			<tr>
+				<td><label for="">Dirección</label></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="">Departamento</label></td>
+				<td>
+					<select name="" id="">
+						<option value="">Lima</option>
+						<option value="">Lima</option>
+						<option value="">Lima</option>
+						<option value="">Lima</option>
+						<option value="">Lima</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="">Provincia</label></td>
+				<td>
+					<select name="" id="">
+						<option value="">Lima</option>
+						<option value="">Lima</option>
+						<option value="">Lima</option>
+						<option value="">Lima</option>
+						<option value="">Lima</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="">Distrito</label></td>
+				<td>
+					<select name="" id="">
+						<option value="">Lima</option>
+						<option value="">Lima</option>
+						<option value="">Lima</option>
+						<option value="">Lima</option>
+						<option value="">Lima</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="">Foto del hincha</label></td>
+				<td><input type="file"></td>
+			</tr>
+			<tr>
+				<td><label for="">Mensaje de Aliento</label></td>
+				<td><textarea name="" id="" cols="15" rows="15"></textarea></td>
+			</tr>
+			<tr>
+				<td><input type="submit"></td>
+				<td><input type="reset"></td>
+			</tr>
+		</table>
+
+
+	</form>
+</body>
+</html>

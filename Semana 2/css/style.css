@@ -1,0 +1,88 @@
+/*[class="123"]{
+	color: red;
+}
+
+[id="123"]{
+	background: yellow;
+}*/
+
+#\31 23{
+	color: red;
+}
+
+
+.rgb{
+	color: rgba(150,150,150,0.5);
+	background-color: #787878;
+}
+
+html{
+	height: 1000px;
+	border: solid 10px red;
+	padding: 30px;
+	/*background-color: #e5e81b;*/
+	background-image: url('../img/pattern.png');
+	 /*repeat(default), no-repeat, repeat-x, repeat-y */
+	background-repeat: repeat;
+	/* bottom, left, top, right, center y sus combinaciones*/
+	/* top-left */
+	background-position: top left;
+	/* scroll, fixed*/
+	background-attachment: scroll;
+	/* padding-box(default), border-box, content-box*/
+	background-origin: padding-box;
+	/*background-blend-mode: luminosity;*/
+	/*background-size: contain;*/
+
+
+	/*background: #FF0000 url('../img/fondo2.jpg') repeat fixed center;
+	*/
+
+}
+
+.avatar{
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+}
+.cuadrado{
+	width: 300px;
+	height: 300px;
+	margin: 20px 10px 20px 5px;
+	padding: 20px 10px 5px 35px; 
+	border: solid 10px tomato;
+	outline: solid 5px green;
+	box-sizing: border-box;
+	background: #757575;
+	/*
+	border-color: red;
+	border-width: 10px;
+	border-style: solid;
+	border-radius: 50%;*/
+
+	border-radius: 30px;
+	display: inline-block;
+
+	/*margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 35px;
+	margin-right: 5px;*/
+
+	/*margin: 20px;
+	margin: 30px 20px;
+	margin: 20px 10px 5px;*/
+
+
+	/*padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;*/
+
+	
+}
+
+
+
+
+
+
