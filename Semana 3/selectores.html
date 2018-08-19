@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Selectores</title>
+	<style>
+		/*Selecciona el hijo directo*/
+		.selector > p{
+			color: blue;
+		}
+		.selector + p{
+			color: green;
+		}
+		.selector ~ p{
+			color: red;
+		}
+		[href]{
+			color : purple;
+		}
+		[class="123"]{
+			color: tomato;
+		}
+		[class~="principal"]{
+			font-size: 25px;
+		}
+		[lang|="en"]{
+			text-decoration: underline;
+		}
+		[class^="texto"]{
+			text-decoration: line-through;
+		}
+		[class$="texto"]{
+			text-shadow: 0 0 5px red;
+		}
+		[class*="arial"]{
+			font-family: arial;
+		}
+
+
+
+		/*primer hijo*/
+
+		ul li:first-child{
+			color: red;
+		}
+		/*ultimo hijo*/
+		ul li:last-child{
+			color: blue;
+		}
+
+		footer p:first-of-type{
+			font-family: arial;
+		}
+		footer p:last-of-type{
+			color: green;
+		}
+
+
+		.parrafo:first-line{
+			color: green;
+		}
+		.parrafo:first-letter{
+			font-size: 30px;
+			font-weight: bold;
+		}
+		[lang="en-ch"] span:only-child{
+			font-size: 35px;
+		}
+		footer i:only-of-type{
+			color: purple;
+		}
+
+		ul li:nth-last-child(3){
+			border: solid 1px red;
+		}
+		ul li:nth-child(4){
+			border: solid 1px green;
+		}
+		footer p:nth-last-of-type(2){
+			background-color: red;
+		}
+
+		.parrafo{
+			transition: all .5s;
+		}
+		.parrafo:hover{
+			font-family: arial;
+			color: #000;
+		}
+
+		ul li:not(:last-child){
+			text-shadow: 0 0 5px green;
+		}
+
+		h1{
+			position: relative;
+			display: inline-block;
+			padding: 0 40px;
+		}
+
+		h1::before{
+			content: "";
+			width: 30px;
+			height: 2px;
+			background: red;
+			display: inline-block;
+			position: absolute;
+			top: 50%;
+			left: 0px;
+		}
+		h1::after{
+			content: "";
+			width: 30px;
+			height: 2px;
+			background: red;
+			display: inline-block;
+			position: absolute;
+			top: 50%;
+			right: 0px;
+		}
+
+		.cuadrado{
+			width: 100%;
+			height: 400px;
+			background: #fa9928;
+			margin: 40px 0;
+			position: relative;
+		}	
+
+		.cuadrado::before{
+			content: "";
+			width: 100%;
+			height: 30px;
+			background-image: url('img/pattern.png');
+			background-repeat: repeat-x;
+			background-size: 30px;
+			display: inline-block;
+			position: absolute;
+			top: -30px;
+		}
+
+	</style>
+</head>
+<body>
+	
+		<div class="selector">
+			<p>hola soy hijo directo</p>
+			<header>
+				<p class="123"> hola no soy hijo directo</p>
+				<a href="">soy un link</a>
+			</header>
+		</div>
+		<p class="textoprincipal">Hola soy un hermano</p>
+		<p class="principaltexto" lang="en-ch">
+			<span>Hola</span> <span>soy</span> el otro hermano</p>
+		<p lang="en-ch" class="principalarialalterno"><span>Hola</span> soy el otro hermano pero adoptado</p>
+
+		
+
+		<ul>
+			<li>elemento 1</li>
+			<li>elemento 2</li>
+			<li>elemento 3</li>
+			<li>elemento 4</li>
+			<li>elemento 5</li>
+			<li>elemento 6</li>
+			<li>elemento 7</li>
+		</ul>
+
+		
+		<footer>
+			<span>elemento 1</span>
+			<p>hola mundo</p>
+			<i>soy unico</i>
+			<p>hola mundo 2</p>
+			<p>hola mundo 3</p>
+			<span>elemento 2</span>
+		</footer>
+
+		<p class="parrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta tenetur ad rerum cupiditate natus unde cumque tempore libero, repellat iure deserunt itaque officiis. Assumenda, consectetur itaque doloremque molestias ex aut.</p>
+
+
+		<h1>Titulo</h1>
+
+
+		<div class="cuadrado">
+			
+		</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+@font-face{
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Light.ttf');
+	font-weight: 100;
+}
+@font-face{
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.ttf');
+	font-weight: 400;
+}
+@font-face{
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Medium.ttf');
+	font-weight: 600;
+}
+@font-face{
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Bold.ttf');
+	font-weight: 700;
+}
+/*
+body{
+	font-size: 40px;
+}*/
+
+.azul{
+	color: blue;
+	/*separaciones entre comillas*/
+	font-family: 'Montserrat','Arial', sans-serif;
+	font-weight: 400;
+
+}
+h2{
+	color: inherit;
+	/* none(default) - lowercase - uppercase - capitalize*/
+	text-transform: capitalize;
+	/* añade espacio entre caracteres*/ 
+	letter-spacing: -2px;
+	word-spacing: 20px;
+	text-shadow: 2px 2px 10px rgba(0,0,0,.5);
+	font-size: 20px;
+}
+p{
+	/*Left(default) - Right - Center - Justify*/
+	text-align: left;
+	color: initial;
+	/**/
+	font-size: 3.5rem;
+	text-indent: 50%;
+	/*line-height: 40px;*/
+	/* ltr(default) - rtl - initial - inherit*/
+	direction: ltr;
+}
+p span{
+	font-size: 5rem;
+}
+a{
+	/* none(default) - underline - overline -  
+	line-through - initial - inherit*/
+	text-decoration: line-through;
+}
+
+.none{
+	display: none;
+}
+.hidden{
+	visibility: hidden;
+}
+
+.cuadrado{
+	min-width: 100px;
+	max-width: 800px;
+	min-height: 100px;
+	height: 800px;
+	background: tomato;
+}
+
+
+
+
+
+
+
+
+
+
