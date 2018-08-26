@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox</title>
+	<style>
+		.contenedor{
+			width: 900px;
+			height: 1200px;
+			background: tomato;
+
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-between;
+			align-content: center;
+			
+			/*flex-wrap: wrap;
+			justify-content: space-between;*/
+		}
+		.elemento{
+			background: #fff;
+			color: #000;
+			padding: 40px;
+			width: 200px;
+			margin: 5px;
+			height: 100px;
+		}
+		.contenedor .elemento:nth-child(1){
+			color: red;
+			order: 5;
+		}
+		.contenedor .elemento:nth-child(2){
+			color: red;
+			order: 4;
+		}
+		.contenedor .elemento:nth-child(3){
+			color: red;
+			order: 2;
+		}
+		.contenedor .elemento:nth-child(4){
+			color: red;
+			order: 3;
+		}
+		.contenedor .elemento:nth-child(5){
+			color: red;
+			order: 1;
+		}
+		
+		ul li{
+			display: inline-block;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<div class="contenedor">
+		<!--<img src="https://via.placeholder.com/100x60" alt="">
+		<ul>
+			<li>elemento 1</li>
+			<li>elemento 2</li>
+			<li>elemento 3</li>
+			<li>elemento 4</li>
+		</ul>-->
+		
+		<div class="elemento">
+			elemento 1
+		</div>
+		<div class="elemento">
+			elemento 2
+		</div>
+		<div class="elemento">
+			elemento 3
+		</div>
+		<div class="elemento">
+			elemento 4
+		</div>
+		<div class="elemento">
+			elemento 5
+		</div>
+	</div>
+
+
+</body>
+</html>
