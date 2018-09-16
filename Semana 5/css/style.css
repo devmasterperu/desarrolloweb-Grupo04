@@ -153,6 +153,7 @@ body{
 	width: 100%;
 	box-shadow: -10px 10px 30px rgba(0,0,0,.2);
 	position: relative;
+	display: inline-block;
 }
 
 
@@ -174,8 +175,10 @@ body{
 	left: 50%;
 	transform: translateX(-50%);
 }
-
-.works .item-works.active{
+.works .item-works{
+	transition: all .5s;
+}
+.works .active .item-works{
 	background: #f1f1f1;
 	transform: translateY(-25px);
 }
@@ -219,6 +222,43 @@ body{
 .feature-image{
 	width: 100%;
 }
+.content-image img{
+	width: 100%
+}
+
+
+.boton-responsive{
+	border: none;
+
+}
+.boton-responsive:focus{
+	outline: none;
+}
+.boton-responsive span{
+	display: block;
+	width: 30px;
+	height: 2px;
+	margin: 6px 0;
+	background: black;
+	transition: all .2s;
+}
+
+
+.boton-responsive.activo span:first-child{
+	transform: rotate(45deg) translate(5px,-5px);
+}
+.boton-responsive.activo span:nth-child(2){
+	display: none;
+}
+
+.boton-responsive.activo span:last-child{
+	transform: rotate(-45deg) translate(10px,0px);
+}
+
+
+
+
+
 
 /*Laptops */
 @media screen and (min-width: 993px) and (max-width: 1200px){

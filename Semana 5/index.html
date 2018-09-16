@@ -15,8 +15,12 @@
 	  <a class="navbar-brand" href="#">Landy</a>
 
 
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
+	  <button class="navbar-toggler boton-responsive" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+	    <span></span>
+	    <span></span>
+	    <span></span>
+
 	  </button>
 	  <div class="collapse navbar-collapse d-md-flex justify-content-end" id="navbarNav">
 	    <ul class="navbar-nav align-items-center">
@@ -63,37 +67,46 @@
 		
 		<div class="container">
 
+
 			<div class="row">
-				<div class="col-md-12">
-					<h2 class="section-title">How it works</h2>
-				</div>
-				<div class="col-md-12">
-					<div class="content-image">
-						<img src="img/preview-3.png" alt="">
-					</div>
-					
-				</div>
-				<div class="col-md-4">
-					<div class="item-works active">
+			  
+
+			  <div class="col-10 offset-1">
+			    <div class="tab-content" id="v-pills-tabContent">
+			      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"><img width="100%" src="img/preview-1.png"></div>
+			      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"><img width="100%" src="img/preview-2.png"></div>
+			      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"><img width="100%" src="img/preview-3.png"></div>
+			    </div>
+			  </div>
+
+
+			  <div class="col-12">
+			    <div class="nav nav-pills d-flex flex-row justify-content-center flex-nowrap" id="v-pills-tab" role="tablist">
+			      <a class="active p-3" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+					<div class="item-works">
 						<span>1</span>
 						<p>Choose any website to turn into an interactive pinboard for feedback</p>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="item-works">
+			      </a>
+			      <a class="p-3" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile " aria-selected="false">
+			      	<div class="item-works">
 						<span>2</span>
 						<p>Choose any website to turn into an interactive pinboard for feedback</p>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="item-works">
+			      </a>
+			      <a class="p-3" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+			      	<div class="item-works">
 						<span>3</span>
 						<p>Choose any website to turn into an interactive pinboard for feedback</p>
 					</div>
-				</div>
+			      </a>
+			      
+			    </div>
+			  </div>
 			</div>
-		</div>
 
+
+	
 
 	</section>
 	
@@ -164,5 +177,22 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script>
+
+
+
+		$('.boton-responsive').click( function(){
+			$('.boton-responsive').toggleClass('activo');
+		});
+
+	
+
+		/*
+		$('.boton-responsive').addClass('activo');
+		$('.boton-responsive').removeClass('activo');*/
+		//
+
+
+	</script>
 </body>
 </html>

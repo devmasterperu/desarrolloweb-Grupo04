@@ -1,0 +1,225 @@
+.cuadrado{
+	display: inline-block;
+	margin: 100px;
+	width: 150px;
+	height: 150px;
+	opacity: 0;
+	background-color: tomato;
+	transition: all .5s;
+	/*transform: translate(50%, 10px);
+	transform: translateX(-20px);
+	transform: translateY(150px);
+	transform: scale(1.2);
+	skewX, skewY
+	transform: skew(-10deg,20deg);
+	transform: rotate(20deg);
+*/
+	animation-name: cuadrado;
+	animation-duration: 1s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+
+@keyframes cuadrado{
+	0%{
+		
+	}
+
+	50%{
+		opacity: 1;
+		transform: rotate(45deg);
+	}
+
+	100%{
+		border-radius: 50%;
+		background: skyblue;
+	}
+
+}
+
+
+
+.loading{
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	border-top: solid 10px tomato;
+	border-left: solid 10px gray;
+	border-right: solid 10px gray;
+	border-bottom: solid 10px gray ;
+	position: absolute;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	animation-name: loading;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+
+@keyframes loading{
+	from{
+		transform: translate(-50%,-50%) rotate(0deg);
+	}
+	to{
+		transform: translate(-50%,-50%) rotate(360deg);
+	}
+}
+
+
+.pelota{
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	border: solid 1px rgb(55,207,220);
+	background: rgb(55,207,220);
+	background: radial-gradient(circle, rgba(55,207,220,1) 0%, rgba(89,137,229,1) 100%);
+	border-radius: 50%;
+	position: relative;
+	margin-left: 50px;
+	z-index: 2;
+
+	animation-name: pelota;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.pelota:after{
+	content: "";
+	width: 50%;
+	position: absolute;	
+	top: 0;
+	left: 15%;
+	height: inherit;
+	border-left: solid 30px #fff;
+	border-radius: 50%;
+}
+.pelota:before{
+	content: "";
+	width: 50%;
+	position: absolute;	
+	top: 0;
+	right: 15%;
+	height: inherit;
+	border-right: solid 30px #fff;
+	border-radius: 50%;
+}
+
+
+.sombra{
+	width: 150px;
+	height: 20px;
+	margin-left: 50px;
+	background: rgba(0,0,0,.3);
+	border-radius: 50%;
+	position: relative;
+	z-index: 1;
+	filter: blur(10px);
+	transform: translateY(150px) scale(1);
+
+	animation-name: sombra;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+
+@keyframes pelota{
+	0%{
+		transform: translateY(0px) rotate(0deg);
+	}
+	100%{
+		transform: translateY(160px) rotate(360deg);
+	}
+}
+
+
+@keyframes sombra{
+	0%{
+		transform: translateY(150px) scale(1);
+	}
+
+	100%{
+		transform: translateY(150px) scale(.5);
+	}
+}
+
+
+body, html{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.elemento{
+	font-family: 'Zilla Slab', sans-serif;
+	font-weight: bold;
+	font-size: 45px;
+	margin: 0 2px;
+	transform: translateY(100px);
+}
+
+
+
+
+.hello{
+	animation-name: hello;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+.world{
+	animation-name: world;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-delay: .5s;
+}
+
+@keyframes hello{
+	0%{
+
+	}
+	10%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	80%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	90%{
+		transform: translate(0px);
+		opacity: 0;
+	}
+}
+
+
+@keyframes world{
+	0%{
+	}
+	10%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	70%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	80%{
+		transform: translate(0px);
+		opacity: 0;
+	}
+}
+
+
+
+/*
+.cuadrado:hover{
+	transform: translate(150px) scale(2) rotate(20deg); 
+}*/

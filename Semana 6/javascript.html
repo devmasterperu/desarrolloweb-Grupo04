@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript</title>
+</head>
+<body>
+	
+
+	<div id="dia"></div>	
+
+
+	<button type="button" onclick="FnEsconder();">Esconder Mensaje</button>
+<button type="button" onclick="FnAparecer();">Esconder Mensaje</button>
+	<div id="mensaje">Hola soy un mensaje</div>
+
+
+	<script>
+		var total = 100;
+
+		var mensaje = "Hola Mundo \/ ";
+
+		var total = total + 1000;
+
+		var esalumno = true;
+
+		//alert(total);
+
+		/**/
+
+		//alert(mensaje);
+
+		var x = "1";
+		var y = 1;
+
+
+		x == y; //true
+
+
+
+		var suma = x + y;
+
+		//alert(suma);
+		//alert(x);
+
+		//console.log(suma);
+
+
+
+		fnsuma(20,120);	
+
+		fnsuma(40,111110);	
+
+
+
+		function fnsuma(a,b){
+
+			var suma = a + b;
+
+			console.log(suma);
+		}
+
+
+		var edad = 30;
+
+		if( edad != 18 ){
+			console.log('Eres menor de edad');
+		
+		}else if ( edad < 24){
+			console.log('Aun eres un joven');
+		}else if( edad < 35){
+			console.log('Ya estas viejo');
+		}
+
+		var dia = new Date().getDay();
+		console.log(dia);
+
+
+		switch (dia){
+			case 0:
+				console.log('Es Domingo :D');
+				document.getElementById("dia").innerHTML="Hoy es Domingo";
+			break;
+			case 3:
+				console.log('Es Miercoles');
+			break;
+			default:
+				console.log('ya quiero que sea domingo');
+			break;
+		}
+
+		function FnEsconder(){
+			document.getElementById("mensaje").style.display="none";
+		}
+
+		function FnAparecer(){
+			document.getElementById("mensaje").style.display="block";
+		}
+
+		document.getElementById("mensaje").style.color="#ff0000";
+
+
+		var num1 = 5;
+		var num2 = 8;
+
+
+		 if(num1 < num2) {
+		 alert("numero1 no es mayor que numero2"); 
+		}
+		 if(num2 > 0) { 
+		alert("numero2 es positivo"); 
+		}
+		 if( num1<0 || num1 != 0) {
+		 alert("numero1 es negativo o distinto de cero");
+		 } 
+
+		 if( num1>0 && num1%2==0) {
+		 alert("numero1 es par positivo");
+		 } 
+
+		 /*
+		 var i=0;
+
+		 while(i<5){
+		 	console.log(i);
+		 	i++;
+		 }
+
+		 var lunes = "Lunes";
+		 var martes = "martes";*/
+
+		 var text = "";
+		 var i;
+
+		 var dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+
+		 for (i = 0; i < dias.length; i++) {
+    		text += dias[i] + "<br>";
+    		console.log(text);
+		};
+
+
+
+
+
+	</script>
+</body>
+</html>
