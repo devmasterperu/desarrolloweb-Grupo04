@@ -255,10 +255,67 @@ body{
 	transform: rotate(-45deg) translate(10px,0px);
 }
 
+.scrolltop{
+	width: 80px;
+    height: 40px;
+    position: fixed;
+    right: -55px;
+    bottom: 50%;
+    background-color: #5989e5;
+    background-image: -webkit-gradient(linear, left top, right top, from(#5989e5), to(#37cfdc));
+    background-image: linear-gradient(to right, #5989e5, #37cfdc);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    -webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    transition: all .3s;
+}
+.scrolltop:hover{
+	right: 0;
+}
+
+.scrolltop span{
+	margin-left: 5px;
+}
+
+.scrolltop.activo{
+	opacity: 1;
+}
+
+.galeria .item{
+	padding: 10px;
+}
+.galeria .item img{
+	width: 100%;
+}
 
 
+.prev{
+	position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: red;
+    font-size: 35px;
+}
 
-
+.next{
+	position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: red;
+    font-size: 35px;
+}
 
 /*Laptops */
 @media screen and (min-width: 993px) and (max-width: 1200px){
