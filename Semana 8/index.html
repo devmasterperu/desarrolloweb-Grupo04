@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plugin ISOTOPE</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		.element-item{
+			display: inline-block;
+			width: 200px;
+			height: 300px;
+			background: gray;
+			margin: 10px 0;
+		}
+	</style>
+</head>
+<body>
+	
+
+	<div class="container">
+		<div class="button-group filter-button-group">
+		  <button data-filter="*">Ver todos</button>
+		  <button data-filter=".hamburguesa">Hamburguesa</button>
+		  <button data-filter=".pollo">Pollo Broaster</button>
+		  <button data-filter=".bebida">Bebidas</button>
+		  <button data-filter=".salchi">Salchipapa</button>
+	
+		</div>
+
+		<div class="grid">
+		  <div class="element-item hamburguesa">hamburguesa</div>
+		  <div class="element-item pollo">pollo</div>
+		  <div class="element-item pollo">pollo</div>
+		  <div class="element-item hamburguesa">hamburguesa</div>
+		  <div class="element-item bebida">bebida</div>
+		  <div class="element-item hamburguesa">hamburguesa</div>
+		  <div class="element-item salchi">salchi</div>
+		  
+		</div>
+	</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var $grid = $('.grid').isotope({});
+
+			// filter items on button click
+			$('.filter-button-group').on( 'click', 'button', function() {
+			  var filterValue = $(this).attr('data-filter');
+			  $grid.isotope({ filter: filterValue });
+			});
+
+		});
+	</script>
+
+</body>
+</html>
